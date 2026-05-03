@@ -1,0 +1,23 @@
+info:
+  name: Tambah Produk ke Keranjang
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/carts
+  headers:
+    - name: Authorization
+      value: Bearer 2|JYek6RSoLtpVBDsx6S3oRAR8YC1RRJkERUAaLQ13e73ca1ac
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: '{"product_id": 1, "qty": 1}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

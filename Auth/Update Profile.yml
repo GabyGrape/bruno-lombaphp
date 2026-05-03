@@ -1,0 +1,26 @@
+info:
+  name: Update Profile
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/api/user/profile
+  headers:
+    - name: Authorization
+      value: Bearer 3|NeVNLT2Q7fVFh94GjlRmHYTJCDlOyGQDX7x6lZyy1869299a
+  body:
+    type: json
+    data: |
+      {
+          "nama_warung": "Warung TechSprint",
+          "alamat_warung": "Jl. Raya Kukusan No. 10, Depok",
+          "name": "Okta Gabriel"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: Upload QRIS
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/user/qris
+  headers:
+    - name: Authorization
+      value: Bearer 3|Sfh5jMh3nfgj9RQZmWcw03BZFLTIvGUD85b7Ga9k9eef3dad
+    - name: Accept
+      value: application/json
+  body:
+    type: multipart-form
+    data:
+      - name: qris_image
+        type: file
+        value:
+          - C:\Users\oktag\OneDrive\Pictures\children-5833719_1920.jpg
+        contentType: Text
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

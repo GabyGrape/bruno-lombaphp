@@ -1,0 +1,27 @@
+info:
+  name: Registrasi Users_
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/register
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "name": "Okta Gabriel",
+          "email": "okta@warung.com",
+          "password": "password123",
+          "role": "pedagang"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

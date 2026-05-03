@@ -1,0 +1,29 @@
+info:
+  name: Insert New Products
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/products
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "nama_menu": "Kopi Susu error Hapus",
+          "deskripsi": "Kopi tidak nikmat bikin nostalgia",
+          "harga": 17000000,
+          "stok": 500,
+          "kategori": "minuman",
+          "user_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
