@@ -1,11 +1,11 @@
 info:
-  name: Registrasi Users_
+  name: Login Users_(review)
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/register
+  url: http://127.0.0.1:8000/api/login
   headers:
     - name: Accept
       value: application/json
@@ -13,10 +13,8 @@ http:
     type: json
     data: |-
       {
-          "name": "Okta Gabriel",
-          "email": "okta@warung.com",
-          "password": "password123",
-          "role": "pedagang"
+          "email": "oktaokta@warung.com",
+          "password": "password123"
       }
   auth: inherit
 

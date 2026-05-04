@@ -1,20 +1,14 @@
 info:
-  name: Update Menu
+  name: Hapus Produk(review)
   type: http
-  seq: 3
+  seq: 4
 
 http:
-  method: PUT
-  url: http://127.0.0.1:8000/api/products/1
+  method: DELETE
+  url: http://127.0.0.1:8000/api/products/2
   headers:
     - name: Accept
       value: application/json
-  body:
-    type: json
-    data: |-
-      {
-          "harga": 18000
-      }
   auth: inherit
 
 settings:

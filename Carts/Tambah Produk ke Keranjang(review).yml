@@ -1,5 +1,5 @@
 info:
-  name: Tambah Produk ke Keranjang
+  name: Tambah Produk ke Keranjang(review)
   type: http
   seq: 1
 
@@ -8,7 +8,7 @@ http:
   url: http://127.0.0.1:8000/api/carts
   headers:
     - name: Authorization
-      value: Bearer 2|JYek6RSoLtpVBDsx6S3oRAR8YC1RRJkERUAaLQ13e73ca1ac
+      value: Bearer 2|2v3bP6u8yIZ1gjOgLQaeEntkv5E79I9Eeeqzgmv4d3893ba5
     - name: Accept
       value: application/json
   body:

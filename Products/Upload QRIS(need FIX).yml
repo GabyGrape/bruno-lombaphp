@@ -1,5 +1,5 @@
 info:
-  name: Upload QRIS
+  name: Upload QRIS(need FIX)
   type: http
   seq: 5
 
@@ -8,7 +8,7 @@ http:
   url: http://127.0.0.1:8000/api/user/qris
   headers:
     - name: Authorization
-      value: Bearer 3|Sfh5jMh3nfgj9RQZmWcw03BZFLTIvGUD85b7Ga9k9eef3dad
+      value: Bearer 3|iiIOOfhYhFlnwAlGTqhRAwTcvti0EDdaNnYCIQbu139e5929
     - name: Accept
       value: application/json
   body:
