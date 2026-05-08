@@ -1,0 +1,27 @@
+info:
+  name: Test Create Order without Array Items
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/orders
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Authorization
+      value: Bearer 2|2v3bP6u8yIZ1gjOgLQaeEntkv5E79I9Eeeqzgmv4d3893ba5
+  body:
+    type: json
+    data: |-
+      {
+          "merchant_id": 1,
+          "pickup_plan_at": "2026-05-10 12:00:00"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -9,17 +9,33 @@ http:
   headers:
     - name: Accept
       value: application/json
+    - name: Authorization
+      value: Bearer 5|9aHxlR6CHx59KAlsgYSK4KXKEYUZqNRdngtIlrZn370be7e2
   body:
-    type: json
-    data: |-
-      {
-          "nama_menu": "Ice Coffee  Robusta",
-          "deskripsi": "Kopi tidak nikmat bikin nostalgia",
-          "harga": 17000000,
-          "stok": 500,
-          "category_id": 1,
-          "user_id": 1
-      }
+    type: multipart-form
+    data:
+      - name: nama_menu
+        type: text
+        value: es teh manis
+      - name: harga
+        type: text
+        value: "9000"
+      - name: stok
+        type: text
+        value: "19"
+      - name: category_id
+        type: text
+        value: "1"
+      - name: user_id
+        type: text
+        value: "1"
+      - name: gambar
+        type: file
+        value:
+          - C:\Users\oktag\OneDrive\Pictures\2207411017.jpg
+      - name: deskripsi
+        type: text
+        value: Hohohihe
   auth: inherit
 
 settings:

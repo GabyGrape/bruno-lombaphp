@@ -13,7 +13,7 @@ http:
       value: application/json
   body:
     type: json
-    data: '{"product_id": 1, "qty": 1}'
+    data: '{"product_id": 3, "qty": 1}'
   auth: inherit
 
 settings:
