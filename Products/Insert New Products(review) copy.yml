@@ -1,0 +1,45 @@
+info:
+  name: Insert New Products(review) copy
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: https://backend-lomba-php-production.up.railway.app/api/products
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Authorization
+      value: Bearer 2|YnffpOZjA5CeG7gK9BSWrzND1Xzz25rGAczE4HNsc6afd33c
+  body:
+    type: multipart-form
+    data:
+      - name: nama_menu
+        type: text
+        value: es teh manis
+      - name: harga
+        type: text
+        value: "9000"
+      - name: stok
+        type: text
+        value: "19"
+      - name: category_id
+        type: text
+        value: "1"
+      - name: user_id
+        type: text
+        value: "1"
+      - name: gambar
+        type: file
+        value:
+          - C:\Users\oktag\OneDrive\Pictures\2207411017.jpg
+      - name: deskripsi
+        type: text
+        value: Hohohihe
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
