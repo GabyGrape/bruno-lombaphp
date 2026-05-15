@@ -1,11 +1,11 @@
 info:
-  name: Registrasi Users_(review)
+  name: Registrasi Users_(review) copy copy
   type: http
-  seq: 2
+  seq: 9
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/register
+  url: https://backend-lomba-php.onrender.com/api/register
   headers:
     - name: Accept
       value: application/json
@@ -14,7 +14,7 @@ http:
     data: |-
       {
           "name": "Okta Sinsaku Sinaga",
-          "email": "oktaokta@warung.com",
+          "email": "oktaokta2@warung.com",
           "password": "password123",
           "role": "pedagang"
       }

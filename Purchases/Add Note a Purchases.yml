@@ -1,0 +1,32 @@
+info:
+  name: Add Note a Purchases
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/purchases
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "user_id": 1,
+          "effective_date": "2026-05-15 10:00:00",
+          "product_name": "Beras Premium",
+          "product_description": "Stok mingguan",
+          "quantity": 50,
+          "unit_price": 12000,
+          "remaining_stock": 50,
+          "sold_quantity": 0,
+          "selling_price": 14000
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
