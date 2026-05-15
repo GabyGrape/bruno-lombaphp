@@ -1,19 +1,23 @@
 info:
-  name: Tambah Produk ke Keranjang(review)
+  name: Test LapKeu
   type: http
   seq: 1
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/cart/add
+  url: http://127.0.0.1:8000/api/purchases
   headers:
-    - name: Authorization
-      value: Bearer 7|EAifuvhSIMfa1ILihVi8A0RppazBEs7QgvRPP7ea6f70cd39
     - name: Accept
       value: application/json
   body:
     type: json
-    data: '{"product_id": 1, "qty": 1}'
+    data: |-
+      {
+          "user_id": 1,
+          "product_name": "Kopi Susu",
+          "quantity": 10,
+          "unit_price": 7000
+      }
   auth: inherit
 
 settings:

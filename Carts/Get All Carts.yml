@@ -1,0 +1,23 @@
+info:
+  name: Get All Carts
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/api/cart/my
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Authorization
+      value: Bearer 5|2HfmP1PUDQZvKHndIJ7bMpvHVuqqBj95OT0VWMmmd4f0c5ea
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
