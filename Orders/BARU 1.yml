@@ -1,16 +1,16 @@
 info:
-  name: Get Orders by User ID (REVIEW)
+  name: BARU 1
   type: http
-  seq: 3
+  seq: 6
 
 http:
   method: GET
-  url: http://127.0.0.1:8000/api/orders/user/2
+  url: http://127.0.0.1:8000/api/orders/my-history
   headers:
     - name: Accept
       value: application/json
     - name: Authorization
-      value: Bearer 3|iiIOOfhYhFlnwAlGTqhRAwTcvti0EDdaNnYCIQbu139e5929
+      value: Bearer 17|3Vst0qSgrYZwt2CsVGq0zqSB1uPdxGrjOwF5w4jza30baf79
   auth: inherit
 
 settings:

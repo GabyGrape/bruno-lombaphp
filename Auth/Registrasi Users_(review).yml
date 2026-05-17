@@ -14,9 +14,9 @@ http:
     data: |-
       {
           "name": "Okta Sinsaku Sinaga",
-          "email": "oktaokta@warung.com",
+          "email": "oktaokta2@warung.com",
           "password": "password123",
-          "role": "pedagang"
+          "role": "konsumen"
       }
   auth: inherit
 

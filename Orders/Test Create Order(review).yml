@@ -15,7 +15,8 @@ http:
     type: json
     data: |-
       {
-          "merchant_id": 1,
+          "merchant_id": 2,
+          "user_id":1,
           "total_price": 30000,
           "pickup_plan_at": "2026-05-04 18:00:00",
           "items": [

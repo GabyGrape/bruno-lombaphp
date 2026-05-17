@@ -8,7 +8,7 @@ http:
   url: http://127.0.0.1:8000/api/user/qris
   headers:
     - name: Authorization
-      value: Bearer 4|Oyes2etsIpsKfBHqMmkWUL4AZySis4Ta2C2sh69J68d086c4
+      value: Bearer 10|kINsShkYZnBlVzlCtJuTcLHQtrGSR44WmJoQShT935eeddfd
     - name: Accept
       value: application/json
   body:

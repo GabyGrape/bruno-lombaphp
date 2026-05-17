@@ -1,16 +1,16 @@
 info:
-  name: Get Orders by User ID (REVIEW)
+  name: BARU 2
   type: http
-  seq: 3
+  seq: 7
 
 http:
   method: GET
-  url: http://127.0.0.1:8000/api/orders/user/2
+  url: http://127.0.0.1:8000/api/orders/merchant-incoming
   headers:
     - name: Accept
       value: application/json
     - name: Authorization
-      value: Bearer 3|iiIOOfhYhFlnwAlGTqhRAwTcvti0EDdaNnYCIQbu139e5929
+      value: Bearer 15|O3gSYTbYqBqYmHJEuWXirPqT9w8qOhhMHAJ0wiMqf39bb29c
   auth: inherit
 
 settings:
